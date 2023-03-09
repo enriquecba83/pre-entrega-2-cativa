@@ -1,0 +1,11 @@
+@media (max-width: 2560px) {
+    /*header*/
+
+    /*main*/
+    .ingreso{
+        font-size: 35px;
+    /*footer*/
+    @include direccionUbicacion(1em,9px,left)
+
+    }
+}

@@ -1,0 +1,12 @@
+@mixin flex($justify-flex, $align-flex){
+    display: flex;
+    justify-content: $justify-flex;
+    align-items: $align-flex;
+}
+
+@mixin direccionUbicacion($margin, $font, $align){
+    margin-left: $margin;
+    font-size: $font;
+    align-self: $align;
+}
+
