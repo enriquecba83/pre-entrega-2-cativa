@@ -361,6 +361,21 @@ article{
     }
 }
 
+@media (max-width: 640){
+    .tituloIndex{
+        font-size: 45px;
+    }
+    
+    .subtituloIndex{
+        font-size: 15px;
+        font-style: oblique;
+        color: rgb(118, 209, 110);
+        text-shadow: 3px 1px 1px black;
+        font-family: 'Play', sans-serif;
+        align-self: center;
+    }
+}
+
 @media (max-width: 320px){
     .gridHeader{
         grid-template-columns: 60px auto;
