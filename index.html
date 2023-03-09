@@ -9,30 +9,54 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <header>
-        <section class="imagenHeader">
+    <header class="containerHeader">
+        <section>
             <div class="gridHeader">
                 <div class="item1">
                     <a href="./index.html">
                         <img class="logoHeader" src="./assets/img/imagen-logo.jpg" alt="logo">
                     </a>
                 </div>
-                <div class="item2"><p class="tituloIndex">ECInformatica</p></div>
+                <div class="item2 "><p class="tituloIndex">ECInformatica</p></div>
                 <div class="item3"><p class="subtituloIndex">Un lugar, toda la tecnologia</p></div>
             </div>
             <nav>
+                <!-- 
                 <ul class="navbar">
                     <li class=flex-navbar>
-                        <a href="./pages/nosotros.html">Quienes Somos</a>
+                        <a href="./pages/nosotros.html">
+                            <button type="button" class="btn btn-success btn-lg">Quienes Somos</button>
+                        </a>
                     </li>
                     <li class=flex-navbar>
-                        <a href="./pages/productos.html">Productos</a>
+                        <a href="./pages/productos.html">
+                            <button type="button" class="btn btn-success btn-lg">Productos</button>
+                        </a>
                     </li>
                     <li class=flex-navbar>
-                        <a href="./pages/ingresos.html">Nuevos Ingresos</a>
+                        <a href="./pages/ingresos.html">
+                            <button type="button" class="btn btn-success btn-lg">Nuevos Ingresos</button>
+                        </a>
                     </li>
                     <li class=flex-navbar>
-                        <a href="./pages/contactos.html">Contactos</a>
+                        <a href="./pages/contactos.html">
+                            <button type="button" class="btn btn-success btn-lg">Contactos</button>
+                        </a>
+                    </li>
+                </ul>
+                 -->
+                <ul class="nav d-flex justify-content-evenly">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="./pages/nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./pages/productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./pages/ingresos.html">Ingresos</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./pages/contactos.html">Contacto</a>
                     </li>
                 </ul>
             </nav>
@@ -67,6 +91,7 @@
             </div>
         </section>
     </main>
+    <!--
     <footer>
         <section class="imagenFooter">
             <div class="gridFooter">
@@ -109,6 +134,59 @@
                             </a>
                         </li>
                     </ul>
+                </div>
+            </div>
+        </section>
+    </footer>
+     -->
+    <footer>
+        <section class="imagenFooter">
+            <div class="row">
+                <div col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4>
+                    <div class="ubicacion">
+                        <p class="tituloUbicacion">¿Donde Estamos?</p>
+                        <div class="gridMapa">
+                            <div class="mapa">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3405.0279181228093!2d-64.20886498503597!3d-31.41335688140509!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432989cb4597ed3%3A0x60f407c3ca995a1f!2zUsOtbyBOZWdybyAzNTAsIEPDs3Jkb2Jh!5e0!3m2!1ses-419!2sar!4v1675027434372!5m2!1ses-419!2sar" width="200" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                            <div class="direccionUbicacion">
+                                <p>Rio Negro 350</p>
+                                <p>B° Pasos de los Andes</p>
+                                <p>Cordoba Capital - Argentina</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4>
+                    <div class="copyright0">
+                        <p class="copyright">Copyright @ECInformatica</p>
+                    </div>
+                </div>
+                <div col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4>
+                    <div>
+                        <ul class="redes">
+                            <li>
+                                <a href="">
+                                    <img src="" alt="whatsapp">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="" alt="instagram">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="" alt="facebook">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="" alt="twitter">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
