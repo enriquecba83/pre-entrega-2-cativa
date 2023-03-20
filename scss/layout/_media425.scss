@@ -1,20 +1,33 @@
 @media (max-width: 425px) {
     /*header*/
-    .tituloIndex{
-        font-size: 30px;
-        font-weight:bold;
-        font-style: oblique;
-        margin-bottom: 0;
-        text-shadow: 6px 4px 4px black;
-    }
-    
-    .subtituloIndex{
-        font-size: 10px;
-        font-style: oblique;
-        margin-bottom: 0;
-        text-shadow: 3px 1px 1px black;
-        align-self: center;
-    }
+    .containerHeader{
+        section{
+            height: 120px;   
+            .gridHeader{
+                grid-template-columns: 20% 60% auto;
+                grid-template-rows: 40px 20px;
+            }
+            div{
+                .item1{
+                    .logoHeader{
+                            max-width: 60px;
+                    }
+                } 
+                .item2{
+                    justify-self: left;
+                    .tituloIndex{
+                        font-size: 40px;
+                    }
+                }
+                .item3{
+                    justify-self: left;
+                    .subtituloIndex{
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }  
     /*main*/
     .ingreso{
         font-size: 35px;

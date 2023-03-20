@@ -1,6 +1,33 @@
 @media (max-width: 375px) {
     /*header*/
-
+    .containerHeader{
+        section{
+            height: 120px;   
+            .gridHeader{
+                grid-template-columns: 20% 60% auto;
+                grid-template-rows: 40px 20px;
+            }
+            div{
+                .item1{
+                    .logoHeader{
+                            max-width: 50px;
+                    }
+                } 
+                .item2{
+                    justify-self: left;
+                    .tituloIndex{
+                        font-size: 30px;
+                    }
+                }
+                .item3{
+                    justify-self: left;
+                    .subtituloIndex{
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
+    }  
     /*main*/
     .ingreso{
         font-size: 35px;

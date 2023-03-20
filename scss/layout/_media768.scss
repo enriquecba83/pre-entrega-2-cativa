@@ -1,6 +1,50 @@
 @media (max-width: 768px) {
     /*header*/
+    .containerHeader{
+        section{
+            height: 170px;   
+            .gridHeader{
+                grid-template-columns: 20% 60% auto;
+                grid-template-rows: 70px 50px;
+            }
+            div{
+                .item1{
+                    .logoHeader{
+                            max-width: 90px;
+                    }
+                } 
+                .item2{
+                    justify-self: left;
+                    .tituloIndex{
+                        font-size: 70px;
+                    }
+                }
+                .item3{
+                    justify-self: left;
+                    .subtituloIndex{
+                        font-size: 25px;
+                    }
+                }
+            }
+        }
+    }  
+/*    .gridHeader{
+        grid-template-columns: 100px 510px auto;
+        grid-template-rows: 10px 30px;
+    }
+    
+    .tituloIndex{
+        @include header(50px,center,center)
+    }
 
+    .subtituloIndex{
+        @include header(15px,center,center)
+    }
+
+    .item3{
+        justify-content: left;
+    }
+*/
     /*main*/
     .ingreso{
         font-size: 35px;

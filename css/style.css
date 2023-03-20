@@ -1,9 +1,18 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Alata&family=Play:wght@700&display=swap");
 /*modificado 17/02 */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
+
+:root {
+  --white: #afafaf;
+  --red: #e31b23;
+  --bodyColor: #292a2b;
+  --borderFormEls: hsl(0, 0%, 10%);
+  --bgFormEls: hsl(0, 0%, 14%);
+  --bgFormElsFocus: hsl(0, 7%, 20%); }
 
 .containerHeader {
   background-color: lightblue;
@@ -15,46 +24,276 @@
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
-    height: 15%; }
+    height: 320px; }
+  .containerHeader .gridHeader {
+    display: grid;
+    grid-template-columns: 10% 50% auto;
+    grid-template-rows: 200px 70px; }
   .containerHeader div {
-    color: chartreuse; }
+    color: chartreuse;
+    position: relative; }
     .containerHeader div .item1 {
       grid-column: 1/2;
-      grid-row: 1/3; }
+      grid-row: 1/3;
+      justify-self: center;
+      align-self: center; }
+      .containerHeader div .item1 .logoHeader {
+        width: 100%;
+        max-width: 256px;
+        border-radius: 50%; }
     .containerHeader div .item2 {
       grid-column: 2/3;
       grid-row: 1/2; }
+      .containerHeader div .item2 .tituloIndex {
+        font-size: 150px;
+        font-weight: bold;
+        font-style: oblique;
+        text-shadow: 6px 4px 4px black;
+        justify-self: center;
+        align-self: center;
+        margin: 0;
+        padding: 0; }
     .containerHeader div .item3 {
       grid-column: 2/3;
-      grid-row: 2/3;
-      justify-self: center; }
-
-.gridHeader {
-  display: grid;
-  grid-template-columns: 125px 510px auto;
-  grid-template-rows: 100px 25px; }
-
-.logoHeader {
-  width: 125px;
-  border-radius: 50%; }
-
-.tituloIndex {
-  font-size: 75px;
-  font-weight: bold;
-  font-style: oblique;
-  margin-bottom: 0;
-  text-shadow: 6px 4px 4px black; }
-
-.subtituloIndex {
-  font-size: 25px;
-  font-style: oblique;
-  margin-bottom: 0;
-  text-shadow: 3px 1px 1px black;
-  align-self: center; }
+      grid-row: 2/3; }
+      .containerHeader div .item3 .subtituloIndex {
+        font-size: 50px;
+        font-style: oblique;
+        text-shadow: 3px 1px 1px black;
+        justify-self: center;
+        align-self: center;
+        margin: 0;
+        padding: 0; }
 
 .nav-item {
-  --bs-nav-link-color:green;
-  font-size: 20px; }
+  --bs-nav-link-color:rgb(20, 163, 20);
+  font-size: 25px; }
+
+* {
+  outline: none; }
+
+a {
+  color: inherit; }
+
+div {
+  font-family: inherit; }
+
+h1 {
+  font-size: 50px;
+  text-align: center;
+  padding: 2rem; }
+
+p {
+  font-size: 20px;
+  text-align: center;
+  padding: 2rem; }
+
+h2 {
+  font-size: 40px;
+  padding: 2rem; }
+
+input,
+select,
+textarea,
+button {
+  font-family: inherit;
+  font-size: 100%; }
+
+button,
+label {
+  cursor: pointer; }
+
+select {
+  appearance: none; }
+
+/* Remove native arrow on IE */
+select::-ms-expand {
+  display: none; }
+
+/*Remove dotted outline from selected option on Firefox*/
+/*https://stackoverflow.com/questions/3773430/remove-outline-from-select-box-in-ff/18853002#18853002*/
+/*We use !important to override the color set for the select on line 99*/
+select:-moz-focusring {
+  color: transparent !important;
+  text-shadow: 0 0 0 var(--white); }
+
+textarea {
+  resize: none; }
+
+ul {
+  list-style: none; }
+
+.backgroundContacto {
+  font: 18px/1.5 "Open Sans", sans-serif;
+  background: var(--bodyColor);
+  color: var(--white);
+  margin: 1.5rem 0; }
+
+.container {
+  max-width: 2560px;
+  margin: 0 auto;
+  padding: 0 1.5rem; }
+
+/* FORM ELEMENTS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.my-form h1 {
+  margin-bottom: 1.5rem; }
+
+.my-form li,
+.my-form .grid > *:not(:last-child) {
+  margin-bottom: 1.5rem; }
+
+.my-form select,
+.my-form input,
+.my-form textarea,
+.my-form button {
+  width: 100%;
+  line-height: 1.5;
+  padding: 15px 10px;
+  border: 1px solid var(--borderFormEls);
+  color: var(--white);
+  background: var(--bgFormEls);
+  transition: background-color 0.3s cubic-bezier(0.57, 0.21, 0.69, 1.25), transform 0.3s cubic-bezier(0.57, 0.21, 0.69, 1.25); }
+
+.my-form textarea {
+  height: 170px; }
+
+.my-form ::placeholder {
+  color: inherit;
+  /*Fix opacity issue on Firefox*/
+  opacity: 1; }
+
+.my-form select:focus,
+.my-form input:focus,
+.my-form textarea:focus,
+.my-form button:enabled:hover,
+.my-form button:focus,
+.my-form input[type="checkbox"]:focus + label {
+  background: var(--bgFormElsFocus); }
+
+.my-form select:focus,
+.my-form input:focus,
+.my-form textarea:focus {
+  transform: scale(1.02); }
+
+.my-form *:required,
+.my-form select {
+  background-repeat: no-repeat;
+  background-position: center right 12px;
+  background-size: 15px 15px; }
+
+.my-form *:required {
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/asterisk.svg); }
+
+.my-form select {
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/down.svg); }
+
+.my-form *:disabled {
+  cursor: default;
+  filter: blur(2px); }
+
+/* FORM BTNS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.my-form .required-msg {
+  display: none;
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/asterisk.svg) no-repeat center left/15px 15px;
+  padding-left: 20px; }
+
+.my-form .btn-grid {
+  position: relative;
+  overflow: hidden;
+  transition: filter 0.2s; }
+
+.my-form button {
+  font-weight: bold; }
+
+.my-form button > * {
+  display: inline-block;
+  width: 100%;
+  transition: transform 0.4s ease-in-out; }
+
+.my-form button .back {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-110%, -50%); }
+
+.my-form button:enabled:hover .back,
+.my-form button:focus .back {
+  transform: translate(-50%, -50%); }
+
+.my-form button:enabled:hover .front,
+.my-form button:focus .front {
+  transform: translateX(110%); }
+
+/* CUSTOM CHECKBOX
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.my-form input[type="checkbox"] {
+  position: absolute;
+  left: -9999px; }
+
+.my-form input[type="checkbox"] + label {
+  position: relative;
+  display: inline-block;
+  padding-left: 2rem;
+  transition: background 0.3s cubic-bezier(0.57, 0.21, 0.69, 1.25); }
+
+.my-form input[type="checkbox"] + label::before,
+.my-form input[type="checkbox"] + label::after {
+  content: '';
+  position: absolute; }
+
+.my-form input[type="checkbox"] + label::before {
+  left: 0;
+  top: 6px;
+  width: 18px;
+  height: 18px;
+  border: 2px solid var(--white); }
+
+.my-form input[type="checkbox"]:checked + label::before {
+  background: var(--red); }
+
+.my-form input[type="checkbox"]:checked + label::after {
+  left: 7px;
+  top: 7px;
+  width: 6px;
+  height: 14px;
+  border-bottom: 2px solid var(--white);
+  border-right: 2px solid var(--white);
+  transform: rotate(45deg); }
+
+/* MQ
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+@media (max-width: 2560px) {
+  .my-form .grid {
+    display: grid;
+    grid-gap: 1.5rem; }
+  .my-form .grid-2 {
+    grid-template-columns: 1fr 1fr; }
+  .my-form .grid-3 {
+    grid-template-columns: auto auto auto;
+    align-items: center; }
+  .my-form .grid > *:not(:last-child) {
+    margin-bottom: 0; }
+  .my-form .required-msg {
+    display: block; } }
+
+@media (max-width: 541px) {
+  .my-form .grid-2 {
+    grid-template-columns: 1fr; }
+  .my-form .grid-3 {
+    grid-template-columns: 1fr; }
+  .my-form input[type="checkbox"] + label::before {
+    top: 50%;
+    transform: translateY(-50%); }
+  .my-form input[type="checkbox"]:checked + label::after {
+    top: 3px; } }
+
+.error404 {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-items: center; }
 
 .imagenFooter {
   background-image: url("../assets/img/imagen-footer.jpg");
@@ -83,13 +322,23 @@
   align-items: center; }
 
 .direccionUbicacion {
-  margin-left: 1em;
+  margin-left: 2px;
   font-size: 9px;
   align-self: center; }
+
+.ubicacion {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); }
 
 /*mediaquery*/
 @media (max-width: 2560px) {
   /*header*/
+  .containerHeader section {
+    height: 320px; }
+    .containerHeader section div .item2 .tituloIndex {
+      font-size: 150px; }
+    .containerHeader section div .item3 .subtituloIndex {
+      font-size: 50px; }
   /*main*/
   .ingreso {
     font-size: 35px;
@@ -100,6 +349,19 @@
 
 @media (max-width: 1440px) {
   /*header*/
+  .containerHeader section {
+    height: 220px; }
+    .containerHeader section .gridHeader {
+      grid-template-columns: 15% 60% auto;
+      grid-template-rows: 120px 60px; }
+    .containerHeader section div .item1 .logoHeader {
+      max-width: 180px; }
+    .containerHeader section div .item2 .tituloIndex {
+      font-size: 120px; }
+    .containerHeader section div .item3 .subtituloIndex {
+      font-size: 40px; }
+    .containerHeader section .nav-item {
+      font-size: 20px; }
   /*main*/
   .ingreso {
     font-size: 35px;
@@ -107,6 +369,17 @@
 
 @media (max-width: 1024px) {
   /*header*/
+  .containerHeader section {
+    height: 180px; }
+    .containerHeader section .gridHeader {
+      grid-template-columns: 20% 60% auto;
+      grid-template-rows: 90px 40px; }
+    .containerHeader section div .item1 .logoHeader {
+      max-width: 120px; }
+    .containerHeader section div .item2 .tituloIndex {
+      font-size: 90px; }
+    .containerHeader section div .item3 .subtituloIndex {
+      font-size: 30px; }
   /*main*/
   .ingreso {
     font-size: 35px;
@@ -114,6 +387,38 @@
 
 @media (max-width: 768px) {
   /*header*/
+  .containerHeader section {
+    height: 170px; }
+    .containerHeader section .gridHeader {
+      grid-template-columns: 20% 60% auto;
+      grid-template-rows: 70px 50px; }
+    .containerHeader section div .item1 .logoHeader {
+      max-width: 90px; }
+    .containerHeader section div .item2 {
+      justify-self: left; }
+      .containerHeader section div .item2 .tituloIndex {
+        font-size: 70px; }
+    .containerHeader section div .item3 {
+      justify-self: left; }
+      .containerHeader section div .item3 .subtituloIndex {
+        font-size: 25px; }
+  /*    .gridHeader{
+        grid-template-columns: 100px 510px auto;
+        grid-template-rows: 10px 30px;
+    }
+    
+    .tituloIndex{
+        @include header(50px,center,center)
+    }
+
+    .subtituloIndex{
+        @include header(15px,center,center)
+    }
+
+    .item3{
+        justify-content: left;
+    }
+*/
   /*main*/
   .ingreso {
     font-size: 35px;
@@ -121,18 +426,21 @@
 
 @media (max-width: 425px) {
   /*header*/
-  .tituloIndex {
-    font-size: 30px;
-    font-weight: bold;
-    font-style: oblique;
-    margin-bottom: 0;
-    text-shadow: 6px 4px 4px black; }
-  .subtituloIndex {
-    font-size: 10px;
-    font-style: oblique;
-    margin-bottom: 0;
-    text-shadow: 3px 1px 1px black;
-    align-self: center; }
+  .containerHeader section {
+    height: 120px; }
+    .containerHeader section .gridHeader {
+      grid-template-columns: 20% 60% auto;
+      grid-template-rows: 40px 20px; }
+    .containerHeader section div .item1 .logoHeader {
+      max-width: 60px; }
+    .containerHeader section div .item2 {
+      justify-self: left; }
+      .containerHeader section div .item2 .tituloIndex {
+        font-size: 40px; }
+    .containerHeader section div .item3 {
+      justify-self: left; }
+      .containerHeader section div .item3 .subtituloIndex {
+        font-size: 15px; }
   /*main*/
   .ingreso {
     font-size: 35px;
@@ -140,6 +448,21 @@
 
 @media (max-width: 375px) {
   /*header*/
+  .containerHeader section {
+    height: 120px; }
+    .containerHeader section .gridHeader {
+      grid-template-columns: 20% 60% auto;
+      grid-template-rows: 40px 20px; }
+    .containerHeader section div .item1 .logoHeader {
+      max-width: 50px; }
+    .containerHeader section div .item2 {
+      justify-self: left; }
+      .containerHeader section div .item2 .tituloIndex {
+        font-size: 30px; }
+    .containerHeader section div .item3 {
+      justify-self: left; }
+      .containerHeader section div .item3 .subtituloIndex {
+        font-size: 10px; }
   /*main*/
   .ingreso {
     font-size: 35px;

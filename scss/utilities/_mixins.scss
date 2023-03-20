@@ -1,3 +1,9 @@
+@mixin header($fontHeader, $justifyHeader, $alignHeader){
+    font-size: $fontHeader;
+    justify-self: $justifyHeader;
+    align-self: $alignHeader;
+}
+
 @mixin flex($justify-flex, $align-flex){
     display: flex;
     justify-content: $justify-flex;
