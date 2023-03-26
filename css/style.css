@@ -95,7 +95,8 @@
       font-family: 'Play', sans-serif; }
   .containerIndex .gridMain .texto1Main {
     grid-column: 1 / 3;
-    grid-row: 2 / 4; }
+    grid-row: 2 / 4;
+    display: grid; }
     .containerIndex .gridMain .texto1Main .textoPrincipal {
       margin-left: 2em;
       padding-bottom: 30px;
@@ -172,11 +173,16 @@
   font-family: 'Play', sans-serif; }
 
 .containerNosotros article p {
-  margin: 2em;
+  margin: 2rem;
   padding-bottom: 30px;
   font-size: 40px;
   color: aqua;
   background: rgba(128, 136, 133, 0.73); }
+
+.containerNosotros .div-img {
+  display: grid;
+  place-content: center;
+  object-fit: scale-down; }
 
 .containerContacto {
   font: 18px/1.5 "Open Sans", sans-serif;

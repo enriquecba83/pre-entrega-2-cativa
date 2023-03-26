@@ -19,10 +19,15 @@
         }
     }    
     article p{
-                margin: 2em;
+                margin: 2rem;
                 padding-bottom: 30px;
                 font-size: 40px;
                 color: aqua;
                 background: rgba(128, 136, 133, 0.73);
+    }
+    .div-img{
+            display: grid;
+            place-content: center;
+            object-fit: scale-down;
     }
 }    
