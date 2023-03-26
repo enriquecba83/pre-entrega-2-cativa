@@ -200,17 +200,11 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    width: 100%;
-    height: 80%; }
+    width: 100%; }
   .containerContacto .container {
     max-width: 2560px;
-    margin: 0 auto;
+    margin: 0;
     padding: 0;
-    /*p{
-            font-size: 20px;
-            text-align: center;
-            padding: 2rem;
-          }*/
     /* Remove native arrow on IE */
     /*Remove dotted outline from selected option on Firefox*/
     /*https://stackoverflow.com/questions/3773430/remove-outline-from-select-box-in-ff/18853002#18853002*/
@@ -223,6 +217,10 @@
       font-family: inherit; }
     .containerContacto .container h1 {
       font-size: 50px;
+      text-align: center;
+      padding: 2rem; }
+    .containerContacto .container p {
+      font-size: 30px;
       text-align: center;
       padding: 2rem; }
     .containerContacto .container h2 {
@@ -247,7 +245,10 @@
     .containerContacto .container textarea {
       resize: none; }
     .containerContacto .container ul {
-      list-style: none; }
+      list-style: none;
+      margin-right: 2rem;
+      padding-bottom: 2rem;
+      margin-bottom: 0; }
   .containerContacto .my-form h1 {
     margin-bottom: 1.5rem; }
   .containerContacto .my-form li,
@@ -325,7 +326,7 @@
     position: relative;
     display: inline-block;
     padding-left: 2rem;
-    transition: containerContacto 0.3s cubic-bezier(0.57, 0.21, 0.69, 1.25); }
+    transition: background 0.3s cubic-bezier(0.57, 0.21, 0.69, 1.25); }
   .containerContacto .my-form input[type="checkbox"] + label::before,
   .containerContacto .my-form input[type="checkbox"] + label::after {
     content: '';
@@ -353,69 +354,68 @@
   background-size: cover;
   justify-items: center; }
 
-.containerFooter section {
+.containerFooter {
   background-image: url("../assets/img/imagen-footer.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
   height: 250px; }
-
-.containerFooter .gridFooter {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); }
-  .containerFooter .gridFooter .ubicacion {
-    display: inline;
-    height: 250px; }
-    .containerFooter .gridFooter .ubicacion .tituloUbicacion {
-      font-size: 30px;
-      text-align: center;
-      color: #14ad21;
-      margin: 0;
-      padding: 0; }
-    .containerFooter .gridFooter .ubicacion .gridMapa {
-      display: grid;
-      grid-template-columns: 40% 60%;
-      height: 200px; }
-      .containerFooter .gridFooter .ubicacion .gridMapa .mapa {
-        justify-self: center;
-        align-self: center;
-        object-fit: cover; }
-    .containerFooter .gridFooter .ubicacion .direccionUbicacion {
-      margin-left: 1rem;
-      font-size: 20px;
-      color: #14ad21;
-      justify-self: left;
-      align-self: center; }
-  .containerFooter .gridFooter .copyright0 {
-    align-self: center;
-    justify-self: center;
-    font-size: 20px;
-    color: #14ad21; }
-  .containerFooter .gridFooter .redes {
-    display: inline; }
-    .containerFooter .gridFooter .redes .tituloRedes {
-      font-size: 30px;
-      text-align: center;
-      color: #14ad21;
-      margin: 0;
-      padding: 0; }
-    .containerFooter .gridFooter .redes .gridRedes {
-      display: grid;
-      height: 200px;
-      margin: 0;
-      padding: 0;
-      grid-auto-rows: auto;
-      justify-items: center;
-      align-items: center;
-      list-style-type: none;
-      font-family: 'Play', sans-serif; }
-      .containerFooter .gridFooter .redes .gridRedes li {
-        display: inline;
-        text-decoration: none;
+  .containerFooter .gridFooter {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); }
+    .containerFooter .gridFooter .ubicacion {
+      display: inline;
+      height: 250px; }
+      .containerFooter .gridFooter .ubicacion .tituloUbicacion {
+        font-size: 30px;
+        text-align: center;
         color: #14ad21;
-        font-size: 18px;
-        background: rgba(252, 251, 250, 0.9); }
+        margin: 0;
+        padding: 0; }
+      .containerFooter .gridFooter .ubicacion .gridMapa {
+        display: grid;
+        grid-template-columns: 40% 60%;
+        height: 200px; }
+        .containerFooter .gridFooter .ubicacion .gridMapa .mapa {
+          justify-self: center;
+          align-self: center;
+          object-fit: cover; }
+      .containerFooter .gridFooter .ubicacion .direccionUbicacion {
+        margin-left: 1rem;
+        font-size: 20px;
+        color: #14ad21;
+        justify-self: left;
+        align-self: center; }
+    .containerFooter .gridFooter .copyright0 {
+      align-self: center;
+      justify-self: center;
+      font-size: 20px;
+      color: #14ad21; }
+    .containerFooter .gridFooter .redes {
+      display: inline; }
+      .containerFooter .gridFooter .redes .tituloRedes {
+        font-size: 30px;
+        text-align: center;
+        color: #14ad21;
+        margin: 0;
+        padding: 0; }
+      .containerFooter .gridFooter .redes .gridRedes {
+        display: grid;
+        height: 200px;
+        margin: 0;
+        padding: 0;
+        grid-auto-rows: auto;
+        justify-items: center;
+        align-items: center;
+        list-style-type: none;
+        font-family: 'Play', sans-serif; }
+        .containerFooter .gridFooter .redes .gridRedes li {
+          display: inline;
+          text-decoration: none;
+          color: #14ad21;
+          font-size: 18px;
+          background: rgba(252, 251, 250, 0.9); }
 
 /*.imagenFooter{
     background-image: url("../assets/img/imagen-footer.jpg");
