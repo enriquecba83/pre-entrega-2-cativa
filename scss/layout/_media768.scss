@@ -48,7 +48,17 @@
     /*main*/
     .ingreso{
         font-size: 35px;
-    /*footer*/
-    
     }
+    /*footer*/
+    .containerFooter {
+        .gridFooter {
+            .redes{
+                .gridRedes{
+                    li{
+                        font-size: 15px;
+                    }
+                }
+            }    
+        }    
+    }    
 }

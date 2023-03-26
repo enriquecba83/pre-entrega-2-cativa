@@ -1,28 +1,53 @@
 @media (max-width: 2560px) {
+
     /*header*/
-    .containerHeader{
-        section{
-            height: 320px;   
-        
-            div{
-                .item2{
-                    .tituloIndex{
+    .containerHeader {
+        section {
+            height: 320px;
+
+            div {
+                .item2 {
+                    .tituloIndex {
                         font-size: 150px;
                     }
                 }
-                .item3{
-                    .subtituloIndex{
+
+                .item3 {
+                    .subtituloIndex {
                         font-size: 50px;
                     }
                 }
             }
         }
-    }        
-    /*main*/
-    .ingreso{
-        font-size: 35px;
-    /*footer*/
-    @include direccionUbicacion(1em,9px,left)
-
     }
+
+    /*main*/
+    .containerContacto {
+        .my-form .grid {
+            display: grid;
+            grid-gap: 1.5rem;
+        }
+
+        .my-form .grid-2 {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .my-form .grid-3 {
+            grid-template-columns: auto auto auto;
+            align-items: center;
+        }
+
+        .my-form .grid>*:not(:last-child) {
+            margin-bottom: 0;
+        }
+
+        .my-form .required-msg {
+            display: block;
+        }
+    }
+
+    /*footer*/
+    /*@include direccionUbicacion(1em,9px,left)*/
+
+
 }

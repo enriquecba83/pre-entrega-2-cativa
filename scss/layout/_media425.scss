@@ -1,37 +1,62 @@
 @media (max-width: 425px) {
+
     /*header*/
-    .containerHeader{
-        section{
-            height: 120px;   
-            .gridHeader{
+    .containerHeader {
+        section {
+            height: 120px;
+
+            .gridHeader {
                 grid-template-columns: 20% 60% auto;
                 grid-template-rows: 40px 20px;
             }
-            div{
-                .item1{
-                    .logoHeader{
-                            max-width: 60px;
+
+            div {
+                .item1 {
+                    .logoHeader {
+                        max-width: 60px;
                     }
-                } 
-                .item2{
+                }
+
+                .item2 {
                     justify-self: left;
-                    .tituloIndex{
+
+                    .tituloIndex {
                         font-size: 40px;
                     }
                 }
-                .item3{
+
+                .item3 {
                     justify-self: left;
-                    .subtituloIndex{
+
+                    .subtituloIndex {
                         font-size: 15px;
                     }
                 }
             }
         }
-    }  
-    /*main*/
-    .ingreso{
-        font-size: 35px;
-    /*footer*/
-    
     }
+
+    /*main*/
+    .containerContacto {
+        .my-form .grid-2 {
+            grid-template-columns: 1fr;
+        }
+
+        .my-form .grid-3 {
+            grid-template-columns: 1fr;
+        }
+
+        .my-form input[type="checkbox"]+label::before {
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .my-form input[type="checkbox"]:checked+label::after {
+            top: 3px;
+        }
+    }
+
+    /*footer*/
+
+
 }
