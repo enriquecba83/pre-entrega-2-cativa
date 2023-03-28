@@ -1,0 +1,55 @@
+  .cards-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    height: 100%;
+  }  
+  .cards-wrapper {
+    display: flex;
+  }
+  
+  .card {
+    scroll-snap-align: start;
+    flex: 0 0 300px;
+    margin-right: 1rem;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .card.active {
+    transform: scale(1.2);
+  }
+  
+  .prev-button,
+  .next-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .prev-button {
+    left: 1rem;
+  }
+  
+  .next-button {
+    right: 1rem;
+  }
+  
+  @media (max-width: 768px) {
+    .prev-button,
+    .next-button {
+      display: none;
+    }
+  }

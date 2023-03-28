@@ -105,7 +105,11 @@
             }
         }
     }
-
+    .containerProductos {
+        .gridProductos{
+          grid-template-columns: repeat(3, 1fr);
+        }
+    }
     /*footer*/
     .containerFooter {
         .gridFooter {

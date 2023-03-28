@@ -49,6 +49,15 @@
     .ingreso{
         font-size: 35px;
     }
+    .containerProductos {
+        .gridProductos{
+          grid-template-columns: 1fr;
+        }
+    }
+    .card {
+        width: 100%; /* Hacer la tarjeta de ancho completo en pantallas pequeñas */
+        margin: 10px 0; /* Ajustar los márgenes */
+    }
     /*footer*/
     .containerFooter {
         .gridFooter {
