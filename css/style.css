@@ -446,69 +446,68 @@
   background-size: cover;
   justify-items: center; }
 
-.containerFooter section {
+.containerFooter {
   background-image: url("../assets/img/imagen-footer.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-  height: 250px; }
-
-.containerFooter .gridFooter {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); }
-  .containerFooter .gridFooter .ubicacion {
-    display: inline;
-    height: 250px; }
-    .containerFooter .gridFooter .ubicacion .tituloUbicacion {
-      font-size: 30px;
-      text-align: center;
-      color: #14ad21;
-      margin: 0;
-      padding: 0; }
-    .containerFooter .gridFooter .ubicacion .gridMapa {
-      display: grid;
-      grid-template-columns: 40% 60%;
-      height: 200px; }
-      .containerFooter .gridFooter .ubicacion .gridMapa .mapa {
-        justify-self: center;
-        align-self: center;
-        object-fit: cover; }
-    .containerFooter .gridFooter .ubicacion .direccionUbicacion {
-      margin-left: 1rem;
-      font-size: 20px;
-      color: #14ad21;
-      justify-self: left;
-      align-self: center; }
-  .containerFooter .gridFooter .copyright0 {
-    align-self: center;
-    justify-self: center;
-    font-size: 20px;
-    color: #14ad21; }
-  .containerFooter .gridFooter .redes {
-    display: inline; }
-    .containerFooter .gridFooter .redes .tituloRedes {
-      font-size: 30px;
-      text-align: center;
-      color: #14ad21;
-      margin: 0;
-      padding: 0; }
-    .containerFooter .gridFooter .redes .gridRedes {
-      display: grid;
-      height: 200px;
-      margin: 0;
-      padding: 0;
-      grid-auto-rows: auto;
-      justify-items: center;
-      align-items: center;
-      list-style-type: none;
-      font-family: 'Play', sans-serif; }
-      .containerFooter .gridFooter .redes .gridRedes li {
-        display: inline;
-        text-decoration: none;
+  height: 100%; }
+  .containerFooter .gridFooter {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); }
+    .containerFooter .gridFooter .ubicacion {
+      display: inline;
+      height: 100%; }
+      .containerFooter .gridFooter .ubicacion .tituloUbicacion {
+        font-size: 30px;
+        text-align: center;
         color: #14ad21;
-        font-size: 18px;
-        background: rgba(252, 251, 250, 0.9); }
+        margin: 0;
+        padding: 0; }
+      .containerFooter .gridFooter .ubicacion .gridMapa {
+        display: grid;
+        grid-template-columns: 55% 45%; }
+        .containerFooter .gridFooter .ubicacion .gridMapa .mapa {
+          margin-left: 1rem;
+          object-fit: cover;
+          justify-self: center;
+          align-self: center; }
+        .containerFooter .gridFooter .ubicacion .gridMapa .direccionUbicacion {
+          margin-left: 1rem;
+          font-size: 20px;
+          color: #14ad21;
+          justify-self: left;
+          align-self: center; }
+    .containerFooter .gridFooter .copyright0 {
+      align-self: center;
+      justify-self: center;
+      font-size: 20px;
+      color: #14ad21; }
+    .containerFooter .gridFooter .redes {
+      display: inline; }
+      .containerFooter .gridFooter .redes .tituloRedes {
+        font-size: 30px;
+        text-align: center;
+        color: #14ad21;
+        margin: 0;
+        padding: 0; }
+      .containerFooter .gridFooter .redes .gridRedes {
+        display: grid;
+        height: 200px;
+        margin: 0;
+        padding: 0;
+        grid-auto-rows: auto;
+        justify-items: center;
+        align-items: center;
+        list-style-type: none;
+        font-family: 'Play', sans-serif; }
+        .containerFooter .gridFooter .redes .gridRedes li {
+          display: inline;
+          text-decoration: none;
+          color: #14ad21;
+          font-size: 18px;
+          background: rgba(252, 251, 250, 0.9); }
 
 /*.imagenFooter{
     background-image: url("../assets/img/imagen-footer.jpg");
@@ -581,7 +580,7 @@ div .direccionUbicacion{
     display: grid;
     grid-gap: 1.5rem; }
   .containerContacto .my-form .grid-2 {
-    grid-template-columns: 2fr 2fr; }
+    grid-template-columns: 1fr 1fr; }
   .containerContacto .my-form .grid-3 {
     grid-template-columns: auto auto auto;
     align-items: center; }
@@ -754,7 +753,7 @@ div .direccionUbicacion{
   .containerFooter .gridFooter .ubicacion .tituloUbicacion {
     font-size: 20px; }
   .containerFooter .gridFooter .ubicacion .direccionUbicacion {
-    font-size: 13px; }
+    font-size: 11px; }
   .containerFooter .gridFooter .copyright0 {
     font-size: 10px; }
   .containerFooter .gridFooter .redes .tituloRedes {
@@ -770,15 +769,15 @@ div .direccionUbicacion{
       grid-template-columns: 20% 60% auto;
       grid-template-rows: 70px 50px; }
     .containerHeader section div .item1 .logoHeader {
-      max-width: 90px; }
+      max-width: 70px; }
     .containerHeader section div .item2 {
       justify-self: left; }
       .containerHeader section div .item2 .tituloIndex {
-        font-size: 70px; }
+        font-size: 40px; }
     .containerHeader section div .item3 {
       justify-self: left; }
       .containerHeader section div .item3 .subtituloIndex {
-        font-size: 25px; }
+        font-size: 18px; }
   /*    .gridHeader{
         grid-template-columns: 100px 510px auto;
         grid-template-rows: 10px 30px;
@@ -807,8 +806,29 @@ div .direccionUbicacion{
     margin: 10px 0;
     /* Ajustar los márgenes */ }
   /*footer*/
-  .containerFooter .gridFooter .redes .gridRedes li {
-    font-size: 15px; } }
+  .containerFooter .gridFooter {
+    display: flex;
+    flex-direction: column; }
+    .containerFooter .gridFooter .ubicacion {
+      display: flex;
+      flex-direction: column; }
+      .containerFooter .gridFooter .ubicacion .tituloUbicacion {
+        font-size: 25px;
+        text-align: center;
+        color: #14ad21;
+        margin: 0;
+        padding: 0; }
+      .containerFooter .gridFooter .ubicacion .gridMapa .mapa {
+        inline-size: 100%;
+        /* justify-self: center;
+                        align-self: center; */ }
+      .containerFooter .gridFooter .ubicacion .direccionUbicacion p {
+        font-size: 18px; }
+    .containerFooter .gridFooter .copyright0 p {
+      margin-bottom: 0;
+      font-size: 10px; }
+    .containerFooter .gridFooter .redes .gridRedes li {
+      font-size: 15px; } }
 
 @media (max-width: 425px) {
   /*header*/
@@ -822,11 +842,11 @@ div .direccionUbicacion{
     .containerHeader section div .item2 {
       justify-self: left; }
       .containerHeader section div .item2 .tituloIndex {
-        font-size: 40px; }
+        font-size: 35px; }
     .containerHeader section div .item3 {
       justify-self: left; }
       .containerHeader section div .item3 .subtituloIndex {
-        font-size: 15px; }
+        font-size: 12px; }
   /*main*/
   .containerContacto .my-form .grid-2 {
     grid-template-columns: 1fr; }
@@ -837,7 +857,18 @@ div .direccionUbicacion{
     transform: translateY(-50%); }
   .containerContacto .my-form input[type="checkbox"]:checked + label::after {
     top: 3px; }
-  /*footer*/ }
+  /*footer*/
+  .containerFooter .gridFooter .ubicacion .tituloUbicacion {
+    font-size: 15px; }
+  .containerFooter .gridFooter .ubicacion .direccionUbicacion p {
+    font-size: 12px; }
+  .containerFooter .gridFooter .copyright0 p {
+    font-size: 8px;
+    align-self: center;
+    align-items: center;
+    justify-content: center; }
+  .containerFooter .gridFooter .redes .gridRedes li {
+    font-size: 10px; } }
 
 @media (max-width: 375px) {
   /*header*/

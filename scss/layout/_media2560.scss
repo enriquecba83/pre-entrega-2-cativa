@@ -29,7 +29,7 @@
         }
 
         .my-form .grid-2 {
-            grid-template-columns: 2fr 2fr;
+            grid-template-columns: 1fr 1fr;
         }
 
         .my-form .grid-3 {
@@ -48,6 +48,5 @@
 
     /*footer*/
     /*@include direccionUbicacion(1em,9px,left)*/
-
 
 }
