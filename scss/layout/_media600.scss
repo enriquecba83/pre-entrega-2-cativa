@@ -1,11 +1,11 @@
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     /*header*/
     .containerHeader{
         section{
             height: 170px;   
             .gridHeader{
                 grid-template-columns: 15% 60% auto;
-                grid-template-rows: 70px 50px;
+                grid-template-rows: 50px 30px;
             }
             div{
                 .item1{
@@ -14,15 +14,14 @@
                     }
                 } 
                 .item2{
-                    justify-self: left;
                     .tituloIndex{
-                        font-size: 70px;
+                        font-size: 50px;
                     }
                 }
                 .item3{
                     justify-self: left;
                     .subtituloIndex{
-                        font-size: 25px;
+                        font-size: 20px;
                     }
                 }
             }

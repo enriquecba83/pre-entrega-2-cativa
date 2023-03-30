@@ -24,11 +24,11 @@
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
-    height: 320px; }
+    height: 280px; }
   .containerHeader .gridHeader {
     display: grid;
     grid-template-columns: 10% 50% auto;
-    grid-template-rows: 200px 70px; }
+    grid-template-rows: 170px 60px; }
   .containerHeader div {
     color: chartreuse;
     position: relative; }
@@ -39,7 +39,7 @@
       align-self: center; }
       .containerHeader div .item1 .logoHeader {
         width: 100%;
-        max-width: 256px;
+        max-width: 250px;
         border-radius: 50%; }
     .containerHeader div .item2 {
       grid-column: 2/3;
@@ -569,12 +569,6 @@ div .direccionUbicacion{
 /*mediaquery*/
 @media (max-width: 2560px) {
   /*header*/
-  .containerHeader section {
-    height: 320px; }
-    .containerHeader section div .item2 .tituloIndex {
-      font-size: 150px; }
-    .containerHeader section div .item3 .subtituloIndex {
-      font-size: 50px; }
   /*main*/
   .containerContacto .my-form .grid {
     display: grid;
@@ -671,9 +665,7 @@ div .direccionUbicacion{
       margin: 0;
       padding: 0; }
     .containerFooter .gridFooter .ubicacion .gridMapa .mapa {
-      inline-size: 100%;
-      /* justify-self: center;
-                        align-self: center; */ }
+      inline-size: 100%; }
     .containerFooter .gridFooter .ubicacion .direccionUbicacion {
       font-size: 15px;
       justify-self: left; }
@@ -682,17 +674,15 @@ div .direccionUbicacion{
 
 @media (max-width: 1024px) {
   /*header*/
-  .containerHeader section {
-    height: 180px; }
-    .containerHeader section .gridHeader {
-      grid-template-columns: 20% 60% auto;
-      grid-template-rows: 90px 40px; }
-    .containerHeader section div .item1 .logoHeader {
-      max-width: 120px; }
-    .containerHeader section div .item2 .tituloIndex {
-      font-size: 90px; }
-    .containerHeader section div .item3 .subtituloIndex {
-      font-size: 30px; }
+  .containerHeader section .gridHeader {
+    grid-template-columns: 20% 60% auto;
+    grid-template-rows: 90px 40px; }
+  .containerHeader section div .item1 .logoHeader {
+    max-width: 120px; }
+  .containerHeader section div .item2 .tituloIndex {
+    font-size: 90px; }
+  .containerHeader section div .item3 .subtituloIndex {
+    font-size: 30px; }
   /*main*/
   .containerIndex .gridMain {
     display: grid;
@@ -766,18 +756,85 @@ div .direccionUbicacion{
   .containerHeader section {
     height: 170px; }
     .containerHeader section .gridHeader {
-      grid-template-columns: 20% 60% auto;
+      grid-template-columns: 15% 60% auto;
       grid-template-rows: 70px 50px; }
     .containerHeader section div .item1 .logoHeader {
-      max-width: 70px; }
+      max-width: 120px; }
     .containerHeader section div .item2 {
       justify-self: left; }
       .containerHeader section div .item2 .tituloIndex {
-        font-size: 40px; }
+        font-size: 70px; }
     .containerHeader section div .item3 {
       justify-self: left; }
       .containerHeader section div .item3 .subtituloIndex {
+        font-size: 25px; }
+  /*    .gridHeader{
+        grid-template-columns: 100px 510px auto;
+        grid-template-rows: 10px 30px;
+    }
+    
+    .tituloIndex{
+        @include header(50px,center,center)
+    }
+
+    .subtituloIndex{
+        @include header(15px,center,center)
+    }
+
+    .item3{
+        justify-content: left;
+    }
+*/
+  /*main*/
+  .ingreso {
+    font-size: 35px; }
+  .containerProductos .gridProductos {
+    grid-template-columns: 1fr; }
+  .card {
+    width: 100%;
+    /* Hacer la tarjeta de ancho completo en pantallas pequeñas */
+    margin: 10px 0;
+    /* Ajustar los márgenes */ }
+  /*footer*/
+  .containerFooter .gridFooter {
+    display: flex;
+    flex-direction: column; }
+    .containerFooter .gridFooter .ubicacion {
+      display: flex;
+      flex-direction: column; }
+      .containerFooter .gridFooter .ubicacion .tituloUbicacion {
+        font-size: 25px;
+        text-align: center;
+        color: #14ad21;
+        margin: 0;
+        padding: 0; }
+      .containerFooter .gridFooter .ubicacion .gridMapa .mapa {
+        inline-size: 100%;
+        /* justify-self: center;
+                        align-self: center; */ }
+      .containerFooter .gridFooter .ubicacion .direccionUbicacion p {
         font-size: 18px; }
+    .containerFooter .gridFooter .copyright0 p {
+      margin-bottom: 0;
+      font-size: 10px; }
+    .containerFooter .gridFooter .redes .gridRedes li {
+      font-size: 15px; } }
+
+@media (max-width: 600px) {
+  /*header*/
+  .containerHeader section {
+    height: 170px; }
+    .containerHeader section .gridHeader {
+      grid-template-columns: 15% 60% auto;
+      grid-template-rows: 50px 30px; }
+    .containerHeader section div .item1 .logoHeader {
+      max-width: 120px; }
+    .containerHeader section div .item2 .tituloIndex {
+      font-size: 50px; }
+    .containerHeader section div .item3 {
+      justify-self: left; }
+      .containerHeader section div .item3 .subtituloIndex {
+        font-size: 20px; }
   /*    .gridHeader{
         grid-template-columns: 100px 510px auto;
         grid-template-rows: 10px 30px;
