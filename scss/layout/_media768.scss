@@ -58,6 +58,16 @@
         width: 100%; /* Hacer la tarjeta de ancho completo en pantallas pequeñas */
         margin: 10px 0; /* Ajustar los márgenes */
     }
+    section {
+        h1{
+            font-size: 25px;
+        }
+        
+        h2{
+            font-size: 15px;
+        }
+    }
+      
     /*footer*/
     .containerFooter {
         .gridFooter {

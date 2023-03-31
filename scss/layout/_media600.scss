@@ -27,27 +27,22 @@
             }
         }
     }  
-/*    .gridHeader{
-        grid-template-columns: 100px 510px auto;
-        grid-template-rows: 10px 30px;
-    }
-    
-    .tituloIndex{
-        @include header(50px,center,center)
-    }
 
-    .subtituloIndex{
-        @include header(15px,center,center)
-    }
-
-    .item3{
-        justify-content: left;
-    }
-*/
     /*main*/
     .ingreso{
         font-size: 35px;
     }
+    .containerNosotros{
+        .tituloNosotros{
+            p {
+                font-size: 30px;
+            }
+        }    
+        article p{
+                    font-size: 25px;
+        }
+    }    
+
     .containerProductos {
         .gridProductos{
           grid-template-columns: 1fr;

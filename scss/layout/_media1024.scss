@@ -101,6 +101,17 @@
             }
         }
     }
+    .containerNosotros{
+        .tituloNosotros{
+            p {
+                font-size: 35px;
+            }
+        }    
+        article p{
+                    font-size: 30px;
+        }
+    }    
+
     .containerProductos {
         .gridProductos{
           grid-template-columns: repeat(2, 1fr);
