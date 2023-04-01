@@ -184,12 +184,13 @@
 
 .containerNosotros .div-img {
   display: grid;
-  place-content: center;
+  justify-self: center;
   object-fit: cover;
-  width: 100%;
-  height: 100%; }
+  width: 90%;
+  margin: 2rem; }
 
 .containerProductos .tituloProductos {
+  padding-top: 1.5rem;
   font-size: 40px;
   color: aquamarine;
   text-align: center;
@@ -202,7 +203,7 @@
 
 .containerProductos .card {
   background-color: #fff;
-  border: 2px solid #ccc;
+  border: 4px solid #ccc;
   border-radius: 5px;
   padding: 20px;
   margin: 20px;
@@ -216,7 +217,7 @@
     max-height: 250px; }
 
 .containerProductos .card:hover {
-  border-color: #007bff; }
+  border-color: #0dec18; }
 
 .imagenMain {
   background-image: url("../assets/img/imagen-main.jpg");
@@ -641,8 +642,6 @@ div .direccionUbicacion{
     font-size: 40px; }
   .containerNosotros article p {
     font-size: 35px; }
-  .containerNosotros .div-img {
-    width: 100%; }
   /*footer*/
   .containerFooter .gridFooter {
     grid-template-columns: 50% 20% 30%; }
@@ -748,19 +747,27 @@ div .direccionUbicacion{
     .containerIndex .gridMain .imagen2Main {
       grid-column: 1 / 4;
       grid-row: 4 /6; }
-  .ingreso {
-    font-size: 35px; }
   .containerProductos .gridProductos {
     grid-template-columns: 1fr; }
+  .containerProductos .tituloProductos {
+    font-size: 30px; }
   .card {
     width: 100%;
     /* Hacer la tarjeta de ancho completo en pantallas pequeñas */
     margin: 10px 0;
     /* Ajustar los márgenes */ }
-  section h1 {
-    font-size: 25px; }
-  section h2 {
-    font-size: 15px; }
+  .containerContacto .container h1 {
+    font-size: 25px;
+    margin: 0;
+    padding: 1rem; }
+  .containerContacto .container p {
+    font-size: 15px;
+    margin: 0;
+    padding: 1rem; }
+  .containerContacto .container h2 {
+    font-size: 20px;
+    margin: 0;
+    padding: 1rem; }
   /*footer*/
   .containerFooter .gridFooter {
     display: flex;
@@ -836,11 +843,6 @@ div .direccionUbicacion{
     font-size: 25px; }
   .containerProductos .gridProductos {
     grid-template-columns: 1fr; }
-  .card {
-    width: 100%;
-    /* Hacer la tarjeta de ancho completo en pantallas pequeñas */
-    margin: 10px 0;
-    /* Ajustar los márgenes */ }
   /*footer*/
   .containerFooter .gridFooter {
     display: flex;
@@ -903,10 +905,6 @@ div .direccionUbicacion{
     .containerIndex .gridMain .imagen2Main {
       padding-bottom: 5px; }
   .containerNosotros .tituloNosotros p {
-    font-size: 35px; }
-  .containerNosotros article p {
-    font-size: 30px; }
-  .containerNosotros .tituloNosotros p {
     font-size: 20px; }
   .containerNosotros article p {
     font-size: 15px; }
@@ -961,6 +959,10 @@ div .direccionUbicacion{
     font-size: 8px; }
   .containerIndex .gridMain .texto2Main article {
     font-size: 8px; }
+  .containerProductos .tituloProductos {
+    font-size: 20px; }
+  .containerProductos .card {
+    margin: 5px; }
   .ingreso {
     font-size: 35px;
     /*footer*/ } }

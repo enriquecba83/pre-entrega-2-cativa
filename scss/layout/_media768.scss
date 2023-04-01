@@ -68,26 +68,36 @@
         }
     }
 
-    .ingreso{
-        font-size: 35px;
-    }
     .containerProductos {
         .gridProductos{
           grid-template-columns: 1fr;
         }
+        .tituloProductos{
+            font-size: 30px;
+        }    
     }
+
     .card {
         width: 100%; /* Hacer la tarjeta de ancho completo en pantallas pequeñas */
         margin: 10px 0; /* Ajustar los márgenes */
     }
-    section {
-        h1{
+    .containerContacto .container{
+        h1 {
             font-size: 25px;
+            margin: 0;
+            padding: 1rem;
         }
-        
-        h2{
+        p{
             font-size: 15px;
+            margin: 0;
+            padding: 1rem;
         }
+        h2{
+           font-size: 20px;
+           margin: 0;
+           padding: 1rem; 
+        }
+
     }
       
     /*footer*/
