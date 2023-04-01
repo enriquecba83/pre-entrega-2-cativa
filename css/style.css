@@ -24,7 +24,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
-    height: 280px; }
+    height: 300px; }
   .containerHeader .gridHeader {
     display: grid;
     grid-template-columns: 10% 50% auto;
@@ -67,7 +67,7 @@
 
 .nav-item {
   --bs-nav-link-color:rgb(20, 163, 20);
-  font-size: 25px; }
+  font-size: 40px; }
 
 .containerIndex .imagenMain {
   background-image: url("../assets/img/imagen-main.jpg");
@@ -80,11 +80,12 @@
 .containerIndex .gridMain {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(10px, 4, 1fr); }
+  grid-auto-rows: minmax(50px, 6, 1fr); }
   .containerIndex .gridMain .tituloMain {
     grid-column: 1/6;
     grid-row: 1/2;
-    align-self: center; }
+    align-self: center;
+    justify-self: center; }
     .containerIndex .gridMain .tituloMain p {
       font-size: 50px;
       font-style: oblique;
@@ -95,8 +96,10 @@
       font-family: 'Play', sans-serif; }
   .containerIndex .gridMain .texto1Main {
     grid-column: 1 / 3;
-    grid-row: 2 / 4;
-    display: grid; }
+    grid-row: 2 / 5;
+    display: grid;
+    align-self: center;
+    justify-self: center; }
     .containerIndex .gridMain .texto1Main .textoPrincipal {
       margin-left: 2em;
       padding-bottom: 30px;
@@ -109,7 +112,7 @@
       color: #00ffd5; }
   .containerIndex .gridMain .imagen1Main {
     grid-column: 3 / 6;
-    grid-row: 2 / 4;
+    grid-row: 2 / 5;
     display: grid;
     justify-items: left;
     align-items: center; }
@@ -119,8 +122,8 @@
       width: 90%; }
   .containerIndex .gridMain .texto2Main {
     display: grid;
-    grid-column: 3 /6;
-    grid-row: 4 /6;
+    grid-column: 3 / 6;
+    grid-row: 5 / 7;
     align-items: center; }
     .containerIndex .gridMain .texto2Main article {
       color: #fafff9;
@@ -133,7 +136,7 @@
       color: white; }
   .containerIndex .gridMain .imagen2Main {
     grid-column: 1 / 3;
-    grid-row: 4 /6;
+    grid-row: 4 / 7;
     display: grid;
     justify-items: center;
     align-items: center;
@@ -572,6 +575,14 @@ div .direccionUbicacion{
 @media (max-width: 2560px) {
   /*header*/
   /*main*/
+  .containerIndex .gridMain .tituloMain p {
+    font-size: 40px; }
+  .containerIndex .gridMain .texto1Main .textoPrincipal {
+    font-size: 35px; }
+  .containerIndex .gridMain .texto1Main .textoPrincipal2 {
+    margin: 2em; }
+  .containerIndex .gridMain .texto2Main article {
+    font-size: 30px; }
   .containerContacto .my-form .grid {
     display: grid;
     grid-gap: 1.5rem; }
@@ -601,60 +612,29 @@ div .direccionUbicacion{
     .containerHeader section div .item3 .subtituloIndex {
       font-size: 40px; }
     .containerHeader section .nav-item {
-      font-size: 20px; }
+      font-size: 25px; }
   /*main*/
-  .containerIndex .gridMain {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(10px, 4, 1fr); }
-    .containerIndex .gridMain .tituloMain p {
-      font-size: 40px; }
-    .containerIndex .gridMain .texto1Main {
-      grid-column: 1 / 3;
-      grid-row: 2 / 4; }
-      .containerIndex .gridMain .texto1Main .textoPrincipal {
-        margin: 1rem;
-        padding-bottom: 30px;
-        font-size: 30px;
-        color: aqua; }
-      .containerIndex .gridMain .texto1Main .textoPrincipal2 {
-        font-size: 25px;
-        margin: 1rem;
-        padding-bottom: 30px;
-        color: #00ffd5; }
-    .containerIndex .gridMain .imagen1Main {
-      grid-column: 3 / 6;
-      grid-row: 2 / 4;
-      display: grid;
-      justify-items: center;
-      align-items: center;
-      object-fit: cover; }
-      .containerIndex .gridMain .imagen1Main .imagenTecno {
-        border-radius: 10%;
-        object-fit: cover; }
-    .containerIndex .gridMain .texto2Main {
-      display: grid;
-      grid-column: 3 /6;
-      grid-row: 4 /6;
-      align-items: center; }
-      .containerIndex .gridMain .texto2Main article {
-        color: #fafff9;
-        font-family: 'Alata', sans-serif;
-        font-size: 20px;
-        margin: 1rem;
-        padding-bottom: 30px;
-        background: rgba(128, 136, 133, 0.73); }
-      .containerIndex .gridMain .texto2Main .textoHistoria {
-        color: white; }
-    .containerIndex .gridMain .imagen2Main {
-      grid-column: 1 / 3;
-      grid-row: 4 /6;
-      display: grid;
-      justify-items: center;
-      align-items: center;
-      padding-bottom: 15px; }
-      .containerIndex .gridMain .imagen2Main .imagenVintage {
-        border-radius: 10%; }
+  .containerIndex .gridMain .tituloMain p {
+    font-size: 35px; }
+  .containerIndex .gridMain .texto1Main {
+    grid-row: 2 / 4; }
+    .containerIndex .gridMain .texto1Main .textoPrincipal {
+      margin: 1rem;
+      font-size: 30px; }
+    .containerIndex .gridMain .texto1Main .textoPrincipal2 {
+      font-size: 25px;
+      margin: 1rem; }
+  .containerIndex .gridMain .imagen1Main {
+    grid-row: 2 / 4;
+    justify-items: center;
+    align-items: center;
+    object-fit: cover; }
+  .containerIndex .gridMain .texto2Main {
+    grid-row: 4 /6; }
+    .containerIndex .gridMain .texto2Main article {
+      font-size: 20px; }
+  .containerIndex .gridMain .imagen2Main {
+    grid-row: 4 /6; }
   .containerProductos .gridProductos {
     grid-template-columns: repeat(3, 1fr); }
   .containerNosotros .tituloNosotros p {
@@ -682,69 +662,31 @@ div .direccionUbicacion{
 
 @media (max-width: 1024px) {
   /*header*/
-  .containerHeader section .gridHeader {
-    grid-template-columns: 20% 60% auto;
-    grid-template-rows: 90px 40px; }
-  .containerHeader section div .item1 .logoHeader {
-    max-width: 120px; }
-  .containerHeader section div .item2 .tituloIndex {
-    font-size: 90px; }
-  .containerHeader section div .item3 .subtituloIndex {
-    font-size: 30px; }
+  .containerHeader section {
+    height: 170px; }
+    .containerHeader section .gridHeader {
+      grid-template-columns: 20% 60% auto;
+      grid-template-rows: 90px 40px; }
+    .containerHeader section div .item1 .logoHeader {
+      max-width: 120px; }
+    .containerHeader section div .item2 .tituloIndex {
+      font-size: 90px; }
+    .containerHeader section div .item3 .subtituloIndex {
+      font-size: 30px; }
+    .containerHeader section nav {
+      display: flex;
+      flex-direction: row-reverse; }
+      .containerHeader section nav .nav-item {
+        font-size: 20px; }
   /*main*/
   .containerIndex .gridMain {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(10px, 4, 1fr); }
     .containerIndex .gridMain .tituloMain p {
-      font-size: 40px; }
-    .containerIndex .gridMain .texto1Main {
-      grid-column: 1 / 3;
-      grid-row: 2 / 4; }
-      .containerIndex .gridMain .texto1Main .textoPrincipal {
-        margin: 1rem;
-        padding-bottom: 30px;
-        font-size: 30px;
-        color: aqua; }
-      .containerIndex .gridMain .texto1Main .textoPrincipal2 {
-        font-size: 25px;
-        margin: 1rem;
-        padding-bottom: 30px;
-        color: #00ffd5; }
-    .containerIndex .gridMain .imagen1Main {
-      grid-column: 3 / 6;
-      grid-row: 2 / 4;
-      display: grid;
-      justify-items: center;
-      align-items: center;
-      object-fit: cover; }
-      .containerIndex .gridMain .imagen1Main .imagenTecno {
-        width: 70%;
-        border-radius: 10%;
-        object-fit: cover; }
-    .containerIndex .gridMain .texto2Main {
-      display: grid;
-      grid-column: 3 /6;
-      grid-row: 4 /6;
-      align-items: center; }
-      .containerIndex .gridMain .texto2Main article {
-        color: #fafff9;
-        font-family: 'Alata', sans-serif;
-        font-size: 20px;
-        margin: 1rem;
-        padding-bottom: 30px;
-        background: rgba(128, 136, 133, 0.73); }
-      .containerIndex .gridMain .texto2Main .textoHistoria {
-        color: white; }
-    .containerIndex .gridMain .imagen2Main {
-      grid-column: 1 / 3;
-      grid-row: 4 /6;
-      display: grid;
-      justify-items: center;
-      align-items: center;
-      padding-bottom: 15px; }
-      .containerIndex .gridMain .imagen2Main .imagenVintage {
-        border-radius: 10%; }
+      font-size: 25px; }
+    .containerIndex .gridMain .texto1Main .textoPrincipal {
+      font-size: 20px; }
+    .containerIndex .gridMain .texto1Main .textoPrincipal2 {
+      font-size: 20px; }
   .containerNosotros .tituloNosotros p {
     font-size: 35px; }
   .containerNosotros article p {
@@ -766,10 +708,10 @@ div .direccionUbicacion{
 @media (max-width: 768px) {
   /*header*/
   .containerHeader section {
-    height: 170px; }
+    height: 160px; }
     .containerHeader section .gridHeader {
       grid-template-columns: 15% 60% auto;
-      grid-template-rows: 70px 50px; }
+      grid-template-rows: 80px 40px; }
     .containerHeader section div .item1 .logoHeader {
       max-width: 120px; }
     .containerHeader section div .item2 {
@@ -780,24 +722,32 @@ div .direccionUbicacion{
       justify-self: left; }
       .containerHeader section div .item3 .subtituloIndex {
         font-size: 25px; }
-  /*    .gridHeader{
-        grid-template-columns: 100px 510px auto;
-        grid-template-rows: 10px 30px;
-    }
-    
-    .tituloIndex{
-        @include header(50px,center,center)
-    }
-
-    .subtituloIndex{
-        @include header(15px,center,center)
-    }
-
-    .item3{
-        justify-content: left;
-    }
-*/
+    .containerHeader section nav {
+      display: flex;
+      flex-direction: row-reverse; }
   /*main*/
+  .containerIndex .gridMain {
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(10px, 8, 1fr); }
+    .containerIndex .gridMain .tituloMain {
+      grid-column: 1 / 9; }
+      .containerIndex .gridMain .tituloMain p {
+        font-size: 20px; }
+    .containerIndex .gridMain .texto1Main {
+      grid-column: 1 / 5; }
+    .containerIndex .gridMain .imagen1Main {
+      grid-column: 4 / 9;
+      grid-row: 2 / 4; }
+      .containerIndex .gridMain .imagen1Main .imagenTecno {
+        width: 70%; }
+    .containerIndex .gridMain .texto2Main {
+      grid-column: 4 / 9;
+      grid-row: 4 /6; }
+      .containerIndex .gridMain .texto2Main article {
+        font-size: 15px; }
+    .containerIndex .gridMain .imagen2Main {
+      grid-column: 1 / 4;
+      grid-row: 4 /6; }
   .ingreso {
     font-size: 35px; }
   .containerProductos .gridProductos {
@@ -839,10 +789,10 @@ div .direccionUbicacion{
 @media (max-width: 600px) {
   /*header*/
   .containerHeader section {
-    height: 170px; }
+    height: 220px; }
     .containerHeader section .gridHeader {
       grid-template-columns: 15% 60% auto;
-      grid-template-rows: 50px 30px; }
+      grid-template-rows: 50px 25px; }
     .containerHeader section div .item1 .logoHeader {
       max-width: 120px; }
     .containerHeader section div .item2 .tituloIndex {
@@ -851,9 +801,35 @@ div .direccionUbicacion{
       justify-self: left; }
       .containerHeader section div .item3 .subtituloIndex {
         font-size: 20px; }
+    .containerHeader section nav {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: center; }
+      .containerHeader section nav .d-flex {
+        flex-direction: column; }
+        .containerHeader section nav .d-flex .nav-item {
+          height: 35px; }
   /*main*/
   .ingreso {
     font-size: 35px; }
+  .containerIndex .gridMain {
+    grid-template-rows: repeat(10px, 12, 1fr); }
+    .containerIndex .gridMain .tituloMain {
+      grid-row: 1 / 2; }
+      .containerIndex .gridMain .tituloMain p {
+        font-size: 18px; }
+    .containerIndex .gridMain .texto1Main .textoPrincipal {
+      margin: 1rem;
+      font-size: 14px; }
+    .containerIndex .gridMain .texto1Main .textoPrincipal2 {
+      font-size: 14px; }
+    .containerIndex .gridMain .texto2Main {
+      grid-row: 6 / 12;
+      align-items: center; }
+      .containerIndex .gridMain .texto2Main article {
+        font-size: 14px; }
+    .containerIndex .gridMain .imagen2Main {
+      grid-row: 6 / 12; }
   .containerNosotros .tituloNosotros p {
     font-size: 30px; }
   .containerNosotros article p {
@@ -893,21 +869,43 @@ div .direccionUbicacion{
 @media (max-width: 425px) {
   /*header*/
   .containerHeader section {
-    height: 120px; }
+    height: 145px; }
     .containerHeader section .gridHeader {
-      grid-template-columns: 20% 60% auto;
+      grid-template-columns: 20% 65% auto;
       grid-template-rows: 40px 20px; }
     .containerHeader section div .item1 .logoHeader {
       max-width: 60px; }
     .containerHeader section div .item2 {
       justify-self: left; }
       .containerHeader section div .item2 .tituloIndex {
-        font-size: 35px; }
+        font-size: 40px; }
     .containerHeader section div .item3 {
       justify-self: left; }
       .containerHeader section div .item3 .subtituloIndex {
-        font-size: 12px; }
+        font-size: 16px; }
+    .containerHeader section nav .d-flex .nav-item {
+      height: 18px;
+      font-size: 15px; }
   /*main*/
+  .containerIndex .gridMain {
+    display: inline; }
+    .containerIndex .gridMain .tituloMain p {
+      font-size: 14px; }
+    .containerIndex .gridMain .texto1Main .textoPrincipal {
+      padding-bottom: 5px;
+      font-size: 10px; }
+    .containerIndex .gridMain .texto1Main .textoPrincipal2 {
+      font-size: 10px;
+      padding-bottom: 5px; }
+    .containerIndex .gridMain .texto2Main article {
+      font-size: 12px;
+      padding-bottom: 5px; }
+    .containerIndex .gridMain .imagen2Main {
+      padding-bottom: 5px; }
+  .containerNosotros .tituloNosotros p {
+    font-size: 35px; }
+  .containerNosotros article p {
+    font-size: 30px; }
   .containerNosotros .tituloNosotros p {
     font-size: 20px; }
   .containerNosotros article p {
@@ -937,7 +935,7 @@ div .direccionUbicacion{
 @media (max-width: 375px) {
   /*header*/
   .containerHeader section {
-    height: 120px; }
+    height: 135px; }
     .containerHeader section .gridHeader {
       grid-template-columns: 20% 60% auto;
       grid-template-rows: 40px 20px; }
@@ -951,7 +949,18 @@ div .direccionUbicacion{
       justify-self: left; }
       .containerHeader section div .item3 .subtituloIndex {
         font-size: 10px; }
+    .containerHeader section nav .d-flex .nav-item {
+      height: 15px;
+      font-size: 14px; }
   /*main*/
+  .containerIndex .gridMain .tituloMain p {
+    font-size: 12px; }
+  .containerIndex .gridMain .texto1Main .textoPrincipal {
+    font-size: 8px; }
+  .containerIndex .gridMain .texto1Main .textoPrincipal2 {
+    font-size: 8px; }
+  .containerIndex .gridMain .texto2Main article {
+    font-size: 8px; }
   .ingreso {
     font-size: 35px;
     /*footer*/ } }

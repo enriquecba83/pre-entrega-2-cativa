@@ -4,6 +4,28 @@
 
 
     /*main*/
+    .containerIndex{
+    .gridMain{
+        .tituloMain{
+            p {
+                font-size: 40px;
+            }
+        }
+        .texto1Main{
+            .textoPrincipal{
+                font-size: 35px;
+            }
+            .textoPrincipal2{
+                margin: 2em;
+            }
+        }
+        .texto2Main{
+            article{
+                font-size: 30px;
+            }
+        }
+    }
+}
     .containerContacto {
         .my-form .grid {
             display: grid;

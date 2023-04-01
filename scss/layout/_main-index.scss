@@ -10,11 +10,12 @@
     .gridMain{
         display: grid;
         grid-template-columns: repeat(5, 1fr);
-        grid-template-rows: repeat(10px, 4, 1fr);
+        grid-auto-rows: minmax(50px, 6, 1fr);
         .tituloMain{
             grid-column: 1/6;
             grid-row: 1/2;
             align-self: center;
+            justify-self: center;
             p {
                 font-size: 50px;
                 font-style: oblique;
@@ -27,8 +28,10 @@
         }
         .texto1Main{
             grid-column: 1 / 3;
-            grid-row: 2 / 4;
+            grid-row: 2 / 5;
             display: grid;
+            align-self: center;
+            justify-self: center;
             .textoPrincipal{
                 margin-left: 2em;
                 padding-bottom: 30px;
@@ -44,7 +47,7 @@
         }
         .imagen1Main{
             grid-column: 3 / 6;
-            grid-row: 2 / 4;
+            grid-row: 2 / 5;
             display: grid;
             justify-items:left;
             align-items: center;
@@ -56,8 +59,8 @@
         }
         .texto2Main{
             display: grid;
-            grid-column: 3 /6;
-            grid-row: 4 /6;
+            grid-column: 3 / 6;
+            grid-row: 5 / 7;
             align-items: center;
             article{
                 color: rgb(250, 255, 249);
@@ -73,7 +76,7 @@
         }
         .imagen2Main{
             grid-column: 1 / 3;
-            grid-row: 4 /6;
+            grid-row: 4 / 7;
             display: grid;
             justify-items: center;
             align-items: center;

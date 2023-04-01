@@ -2,10 +2,10 @@
     /*header*/
     .containerHeader{
         section{
-            height: 170px;   
+            height: 220px;   
             .gridHeader{
                 grid-template-columns: 15% 60% auto;
-                grid-template-rows: 50px 30px;
+                grid-template-rows: 50px 25px;
             }
             div{
                 .item1{
@@ -25,12 +25,53 @@
                     }
                 }
             }
+            nav{
+                display: flex;
+                flex-direction: row-reverse;
+                justify-content: center;
+                .d-flex {
+                    flex-direction: column;
+                    .nav-item{
+                        height: 35px;
+                    }
+                }
+            }
         }
     }  
 
     /*main*/
     .ingreso{
         font-size: 35px;
+    }
+    .containerIndex{
+        .gridMain{
+            grid-template-rows: repeat(10px, 12, 1fr);
+            .tituloMain{
+                grid-row: 1 / 2;
+                p {
+                    font-size: 18px;
+                }
+            }
+            .texto1Main{
+                .textoPrincipal{
+                    margin: 1rem;
+                    font-size: 14px;
+                }
+                .textoPrincipal2{
+                    font-size: 14px;
+                }
+            }
+            .texto2Main{
+                grid-row: 6 / 12;
+                align-items: center;
+                article{
+                    font-size: 14px;
+                }
+            }
+            .imagen2Main{
+                grid-row: 6 / 12;
+            }
+        }
     }
     .containerNosotros{
         .tituloNosotros{

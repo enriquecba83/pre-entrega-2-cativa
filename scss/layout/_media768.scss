@@ -2,10 +2,10 @@
     /*header*/
     .containerHeader{
         section{
-            height: 170px;   
+            height: 160px;   
             .gridHeader{
                 grid-template-columns: 15% 60% auto;
-                grid-template-rows: 70px 50px;
+                grid-template-rows: 80px 40px;
             }
             div{
                 .item1{
@@ -26,26 +26,48 @@
                     }
                 }
             }
+            nav{
+                display: flex;
+                flex-direction: row-reverse;
+            }
         }
     }  
-/*    .gridHeader{
-        grid-template-columns: 100px 510px auto;
-        grid-template-rows: 10px 30px;
-    }
-    
-    .tituloIndex{
-        @include header(50px,center,center)
-    }
 
-    .subtituloIndex{
-        @include header(15px,center,center)
-    }
-
-    .item3{
-        justify-content: left;
-    }
-*/
     /*main*/
+    .containerIndex{
+        .gridMain{
+            grid-template-columns: repeat(8, 1fr);
+            grid-template-rows: repeat(10px, 8, 1fr);
+            .tituloMain{
+                grid-column: 1 / 9;
+                p {
+                    font-size: 20px;
+                }
+            }
+            .texto1Main{
+                grid-column: 1 / 5;
+            }
+            .imagen1Main{
+                grid-column: 4 / 9;
+                grid-row: 2 / 4;
+                .imagenTecno{
+                    width: 70%;
+                }
+            }
+            .texto2Main{
+                grid-column: 4 / 9;
+                grid-row: 4 /6;
+                article{
+                    font-size: 15px;
+                }
+            }
+            .imagen2Main{
+                grid-column: 1 / 4;
+                grid-row: 4 /6;
+            }
+        }
+    }
+
     .ingreso{
         font-size: 35px;
     }
