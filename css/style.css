@@ -535,12 +535,13 @@
         align-items: center;
         list-style-type: none;
         font-family: 'Play', sans-serif; }
-        .containerFooter .gridFooter .redes .gridRedes li {
+        .containerFooter .gridFooter .redes .gridRedes li a {
           display: inline;
           text-decoration: none;
           color: #14ad21;
           font-size: 18px;
-          background: rgba(252, 251, 250, 0.9); }
+          background: rgba(252, 251, 250, 0.75);
+          align-self: center; }
 
 /*.imagenFooter{
     background-image: url("../assets/img/imagen-footer.jpg");

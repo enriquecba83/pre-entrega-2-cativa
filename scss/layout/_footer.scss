@@ -65,11 +65,14 @@
                 list-style-type: none;
                 font-family: 'Play', sans-serif;
                 li{
+                    a{
                     display: inline;
                     text-decoration: none;
                     color: rgb(20, 173, 33);
                     font-size: 18px;
-                    background: rgba(252, 251, 250, 0.9);
+                    background: rgba(252, 251, 250, 0.75);
+                    align-self: center;
+                    }
                 }
             }
         }
