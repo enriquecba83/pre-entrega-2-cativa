@@ -664,6 +664,8 @@ div .direccionUbicacion{
     grid-row: 4 /6; }
   .containerProductos .gridProductos {
     grid-template-columns: repeat(3, 1fr); }
+  .containerIngresos .gridIngresos {
+    grid-template-columns: repeat(3, 1fr); }
   .containerNosotros .tituloNosotros p {
     font-size: 40px; }
   .containerNosotros article p {
@@ -717,6 +719,8 @@ div .direccionUbicacion{
   .containerNosotros article p {
     font-size: 30px; }
   .containerProductos .gridProductos {
+    grid-template-columns: repeat(2, 1fr); }
+  .containerIngresos .gridIngresos {
     grid-template-columns: repeat(2, 1fr); }
   /*footer*/
   .containerFooter .gridFooter .ubicacion .tituloUbicacion {
@@ -776,6 +780,10 @@ div .direccionUbicacion{
   .containerProductos .gridProductos {
     grid-template-columns: 1fr; }
   .containerProductos .tituloProductos {
+    font-size: 30px; }
+  .containerIngresos .gridIngresos {
+    grid-template-columns: 1fr; }
+  .containerIngresos .tituloIngresos {
     font-size: 30px; }
   .card {
     width: 100%;
@@ -865,8 +873,6 @@ div .direccionUbicacion{
     font-size: 30px; }
   .containerNosotros article p {
     font-size: 22px; }
-  .containerProductos .gridProductos {
-    grid-template-columns: 1fr; }
   /*footer*/
   .containerFooter .gridFooter {
     display: flex;
@@ -988,6 +994,10 @@ div .direccionUbicacion{
   .containerProductos .tituloProductos {
     font-size: 20px; }
   .containerProductos .card {
+    margin: 5px; }
+  .containerIngresos .tituloIngresos {
+    font-size: 20px; }
+  .containerIngresos .card {
     margin: 5px; }
   /*footer*/ }
 

@@ -77,6 +77,12 @@
         }
     }
 
+    .containerIngresos {
+        .gridIngresos{
+          grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
     .containerNosotros{
         .tituloNosotros{
             p {
