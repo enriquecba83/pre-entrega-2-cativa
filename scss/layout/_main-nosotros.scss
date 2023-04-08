@@ -9,21 +9,23 @@
     }
     .tituloNosotros{
         p {
-            font-size: 50px;
+            font-size: 40px;
             font-style: oblique;
             color: rgb(198, 236, 154);
             text-shadow: 6px 1px 1px black;
             text-align: center;
             text-justify: center;
+            padding-top: 1rem;
             font-family: 'Play', sans-serif;
         }
     }    
     article p{
                 margin: 2rem;
-                padding-bottom: 30px;
-                font-size: 40px;
+                padding: 30px;
+                font-size: 30px;
                 color: aqua;
                 background: rgba(128, 136, 133, 0.73);
+                text-align: justify;
     }
     .div-img{
             display: grid;
